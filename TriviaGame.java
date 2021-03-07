@@ -177,10 +177,18 @@ public class TriviaGame
 		System.out.printf("Player 1's Points: %d\nPlayer 2's Points: %d\n",
 				players[0].getPoints(), players[1].getPoints());
 		
-		//display winner
-		System.out.printf("%s", 
-				(players[0].getPoints() > players[1].getPoints()) ? 
-						"Player 1 wins!" : "Player 2 wins!");
+		//display winner if there's a difference in points
+		if (players[0].getPoints() != players[1].getPoints())
+		{
+			System.out.printf("%s\n", 
+					(players[0].getPoints() > players[1].getPoints()) ? 
+							"Player 1 wins!" : "Player 2 wins!");
+		}
+		//otherwise, it's a tie
+		else
+		{
+			System.out.printf("%s\n", "It's a tie!");
+		}
 		
 	}
 	
