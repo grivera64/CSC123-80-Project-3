@@ -28,14 +28,15 @@ public class Player
 	public Player(int playerNumber)
 	{
 		
-		//initializing the player stats
+		//initializing the player's fields
 		this.setPlayerNumber(playerNumber);
 		this.setPoints(0);
 		
 	}
 	
 	/* All of the methods below are self-explanatory by method names */
-	//identify which player this object represents
+	
+	//set which player this object represents
 	public void setPlayerNumber(int playerNumber)
 	{
 		

@@ -31,19 +31,27 @@ public class EmployeeModel
 		int employeeCounter = 1;
 		for (Employee e : employees)
 		{
+			
+			//print employee's information
 			System.out.printf("Employee #%d\n", employeeCounter++);
 			System.out.printf("Name: %s\nID Number: %d\nDepartment: %s\nPosition: %s\n\n",
 					e.getName(), e.getIdNumber(), e.getDepartment(), e.getPosition());
+			
 		}
 		
 		
 		//iterate through each of the employee object's toString() methods
 		System.out.printf("%-16s%-16s%-16s%s\n", 
 				"Name:", "ID Number:", "Department", "Position");
+		
+		//print each employee's toString() method (explicitly)
 		for (Employee e : employees)
 		{
+			
 			System.out.printf("%s\n", e.toString());
+			
 		}
+		
 		//Program Termination
 		
 	}

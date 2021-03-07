@@ -40,13 +40,13 @@ public class Employee
 		
 	}
 	
-	//overrid of constructor with different number of arguments
+	//override of constructor with different number of arguments
 	public Employee(String name, int idNumber)
 	{
 		this(name, idNumber, " ", " ");
 	}
 	
-	//setXXX methods
+	//setXXX() methods set the XXX field to the value in the argument
 	public void setName(String name)
 	{
 		this.name = name;
@@ -67,7 +67,7 @@ public class Employee
 		this.position = position;
 	}
 	
-	//getXXX() methods
+	//getXXX() methods return the value of the XXX field to where called
 	public String getName()
 	{
 		return this.name;
@@ -88,7 +88,7 @@ public class Employee
 		return this.position;
 	}
 	
-	//ToString method that is overriden
+	//ToString method that is overridden
 	//from the inherited parent class Object's toString() method
 	//@Override
 	public String toString()

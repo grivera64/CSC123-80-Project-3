@@ -17,9 +17,12 @@
 public class Question
 {
 	
-	//Class fields
+	/* Class fields */
+	
+	//public
 	public final int NUM_ANSWERS = 4;
 	
+	//private
 	private String questionText;
 	private String[] possibleAnswers = new String[NUM_ANSWERS];
 	private int correctAnswerNumber;
@@ -28,7 +31,7 @@ public class Question
 	public Question()
 	{
 		
-		//initialize the fields for the question
+		//initialize the fields for the question object
 		this.setQuestionText("");
 		this.setCorrectAnswerNumber(0);
 		
@@ -40,7 +43,8 @@ public class Question
 	}
 	
 	/* The methods below are self-explanatory by their names */
-	//sets the question in the object
+	
+	//sets the question text field in the object
 	public void setQuestionText(String questionText)
 	{
 		
@@ -48,7 +52,7 @@ public class Question
 		
 	}
 	
-	//sets the correct answer index of possible answers
+	//sets the correct answer number of possible answers of the question
 	public void setCorrectAnswerNumber(int correctAnswerNumber)
 	{
 		
@@ -56,7 +60,7 @@ public class Question
 		
 	}
 	
-	//sets a possible answers at a specific index
+	//sets a possible answers at a specific index of the question
 	public void setPossibleAnswer(String possibleAnswer, int index)
 	{
 		
@@ -64,7 +68,7 @@ public class Question
 		
 	}
 	
-	//returns the question
+	//returns the question text of the object
 	public String getQuestionText()
 	{
 		
@@ -72,7 +76,7 @@ public class Question
 		
 	}
 	
-	//returns the correct answer
+	//returns the correct answer for the question
 	public int getCorrectAnswerNumber()
 	{
 		
@@ -80,7 +84,7 @@ public class Question
 		
 	}
 	
-	//returns an index-specified possible answer
+	//returns an index-specified possible answer for the question
 	public String getPossibleAnswer(int index)
 	{
 		

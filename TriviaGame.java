@@ -39,12 +39,13 @@ public class TriviaGame
 		
 		//local variables (unused variables are commented out)
 		final int NUM_PLAYERS = 2;
-		//int numQuestions = 0;
+		//int numQuestions = 0;		//this is not used in any action
 		int playerTurn = 1;
-		//int questionNum;
-		//int playerAnswer;
-		//int player1Points = 0;
-		//int player2Points = 0;
+		//int questionNum;			//purpose is unknown, because
+									//such value is never used for any action
+		//int playerAnswer;			//answer is stored in Player object
+		//int player1Points = 0;	//points are stored in the player objects
+		//int player2Points = 0;	//points are stored in the player objects
 		
 		//creating Player and Question objects for use
 		Player[] players = new Player[NUM_PLAYERS];
@@ -58,8 +59,6 @@ public class TriviaGame
 		initQuestions(questions);
 		
 		/* Game starts here */
-		
-		//questionNum = 1;
 		
 		//Iterate through each question and ask for and verify each question's answer
 		for (Question question : questions)
@@ -170,10 +169,15 @@ public class TriviaGame
 	//prints game over screen, point breakdown, and winner
 	public static void showGameResults(Player[] players)
 	{
+		
+		//show game ended
 		System.out.printf("Game Over!\n-------------\n");
+		
+		//display points
 		System.out.printf("Player 1's Points: %d\nPlayer 2's Points: %d\n",
 				players[0].getPoints(), players[1].getPoints());
 		
+		//display winner
 		System.out.printf("%s", 
 				(players[0].getPoints() > players[1].getPoints()) ? 
 						"Player 1 wins!" : "Player 2 wins!");
